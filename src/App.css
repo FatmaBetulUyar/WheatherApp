@@ -1,0 +1,170 @@
+.App {
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+
+  display: inline-block;
+  width: 12.5%;
+  padding: 0 10px;
+  margin :0 auto;
+  
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 45px -5px;
+display: flex;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+   /* this adds the "card" effect */
+  padding: 10px;
+  color:white;
+  text-align: center;
+  background: linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%);
+  width: 180px;
+  border-radius: 4px;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+h1{
+  font: italic  30px/30px Georgia, serif;
+}
+
+h5{
+  font-family: 'Carattere', cursive;
+  font-size: 35px;
+  font-weight:inherit ;
+}
+
+.card:hover{
+  transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+ 
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.day{
+  
+  font-family: 'Satisfy', cursive;
+  font-size: 200px;
+  
+ 
+}
+
+.max_temp{
+  font-size: 20px;
+  color:#B1E693;
+}
+.min_temp{
+  font-size: 20px;
+  color:#FFE194;
+}
+
+svg{
+  margin: inherit;
+  width: 70%;
+  height: 70%;
+}
+
+
+.today{
+
+}
+
+
+body{
+ background-color:white ;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown, .dropup {
+  width: 40%;
+  margin: 30px 0px;
+  display: inline-flex;
+  -webkit-text-stroke-width: thin;
+}
+
+.temperature{
+  padding:15px 0;
+  
+  font-family: 'Satisfy', cursive;
+  font-size: large;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 600;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+ }
+
+.element {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+  padding: auto;
+ }
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #57c1eb 0%,#246fa8 100%);
+ } */
+ .container {
+   display: flex;
+   justify-content: center;
+  height: 60%;
+  width:90%;
+
+  border-color: #ffffff;
+  align-items: center;
+  border-radius: 1rem;
+  vertical-align: middle;
+  
+}
+
+.header {
+  color: #dddddd
+}
+.header_main{
+  display: grid;
+}
+
+
+ .elements {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border-radius: 50%;
+   
+   
+ }
+
+.white {fill:#FFFFFF}
+.gray {fill:#E0E0E0}
+.yellow {fill:#FFEB3B}
+
